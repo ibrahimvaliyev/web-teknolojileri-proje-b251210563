@@ -1,0 +1,10 @@
+.bgcolor {
+    background-color: rgb(105, 105, 99) !important;    }
+
+.carousel-item img{
+    height: 500px;
+    object-fit: cover;
+}
+.profile-img {
+     width: 150px; height: auto !important;
+    object-fit: cover !important;  }
