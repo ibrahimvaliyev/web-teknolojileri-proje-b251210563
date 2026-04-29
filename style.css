@@ -1,5 +1,6 @@
 .bgcolor {
-    background-color: rgb(105, 105, 99) !important;    }
+    background-color: rgb(105, 105, 99) !important;    
+}
 
 .carousel-item img{
     height: 500px;
@@ -8,3 +9,20 @@
 .profile-img {
      width: 150px; height: auto !important;
     object-fit: cover !important;  }
+    /* style.css içində */
+.custom-card {
+    transition: transform 0.3s ease, shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px); /* Kartı bir az yuxarı qaldırır */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+}
+.cv-header {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border: 1px solid #dee2e6; /* Çox incə bir çərçivə */
+}
+.cv-header h1 {
+    color: #2c3e50;
+}
