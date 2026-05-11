@@ -41,10 +41,10 @@
                     <p class="text-muted">Lütfen hesabınıza giriş yapın.</p>
                 </div>
 
-                <form action="giris_kontrol.php" method="POST">
+                <form action="login.php" method="POST">
                     <div class="mb-3">
                         <label for="username" class="form-label fw-semibold">Kullanıcı Adı veya Email</label>
-                        <input type="text" class="form-control" id="username" placeholder="Örn: ibrahimv" required>
+                        <input type="text" class="form-control" id="username" name="username placeholder="Örn: ibrahimv" required>
                     </div>
 
             
@@ -53,7 +53,7 @@
                             <label for="password" class="form-label fw-semibold">Şifre</label>
                             <a href="#" class="text-decoration-none small text-success">Şifremi Unuttum</a>
                         </div>
-                        <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required>
                     </div>
 
                     <!-- Beni Hatırla -->

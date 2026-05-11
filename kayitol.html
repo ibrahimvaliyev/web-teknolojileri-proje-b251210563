@@ -40,12 +40,11 @@
                     <p class="text-muted">Aramıza katılmak için formu doldurun.</p>
                 </div>
 
-                <form action="kayit_et.php" method="POST">
-                    <!-- Ad ve Soyad -->
+                <form action="register.php" method="POST">
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="reg-name" class="form-label fw-semibold">Adınız</label>
-                            <input type="text" class="form-control" id="reg-name" placeholder="İbrahim" required>
+                            <input type="text"  class="form-control" id="reg-name" placeholder="İbrahim" required>
                         </div>
                         <div class="col-md-6 mt-3 mt-md-0">
                             <label for="reg-surname" class="form-label fw-semibold">Soyadınız</label>
@@ -56,36 +55,33 @@
                     <!-- Kullanıcı Adı -->
                     <div class="mb-3">
                         <label for="reg-username" class="form-label fw-semibold">Kullanıcı Adı</label>
-                        <input type="text" class="form-control" id="reg-username" placeholder="ibrahimv" required>
+                        <input type="text" name="reg-username" class="form-control" id="reg-username" placeholder="ibravlyv" required>
                     </div>
 
                     <!-- Email -->
                     <div class="mb-3">
-                        <label for="reg-email" class="form-label fw-semibold">Email Adresiniz</label>
-                        <input type="email" class="form-control" id="reg-email" placeholder="ornek@mail.com" required>
+                        <label for="reg-email"  class="form-label fw-semibold">Email Adresiniz</label>
+                        <input type="email" name="reg-email" class="form-control" id="reg-email" placeholder="ornek@mail.com" required>
                     </div>
 
                     <!-- Şifre -->
                     <div class="mb-3">
                         <label for="reg-password" class="form-label fw-semibold">Şifre</label>
-                        <input type="password" class="form-control" id="reg-password" placeholder="••••••••" required>
+                        <input type="password" name="reg-password" class="form-control" id="reg-password" placeholder="••••••••" required>
                     </div>
 
                     <!-- Şifre Tekrar -->
                     <div class="mb-4">
                         <label for="reg-password-confirm" class="form-label fw-semibold">Şifre Tekrar</label>
-                        <input type="password" class="form-control" id="reg-password-confirm" placeholder="••••••••" required>
+                        <input type="password" name="reg-password" class="form-control" id="reg-password-confirm" placeholder="••••••••" required>
                     </div>
 
-                    <!-- Sözleşme Kabul -->
                     <div class="mb-4 form-check">
                         <input type="checkbox" class="form-check-input" id="terms" required>
                         <label class="form-check-label small text-muted" for="terms">
                             <a href="#" class="text-success text-decoration-none">Kullanım Şartlarını</a> ve Gizlilik Politikasını kabul ediyorum.
                         </label>
                     </div>
-
-                    <!-- Kayıt Butonu -->
                     <button type="submit" class="btn btn-dark w-100 fw-bold py-2 shadow-sm">Hesabı Oluştur</button>
                 </form>
 
