@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
 
 $username = $_POST["username"];
 $password = $_POST["password"];
+
 $sql = "SELECT * FROM users WHERE username=? OR email=?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ss", $username, $username);
@@ -19,7 +20,6 @@ $user = $result->fetch_assoc();
 
 if ($user && password_verify($password, $user["password"])) {
     
-    // 🔥 SESSION YARADIRIQ
     $_SESSION["user_id"] = $user["id"];
     $_SESSION["username"] = $user["username"];
 
