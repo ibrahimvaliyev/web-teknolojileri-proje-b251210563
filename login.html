@@ -43,20 +43,18 @@
 
                 <form action="login.php" method="POST">
                     <div class="mb-3">
-                        <label for="username" class="form-label fw-semibold">Kullanıcı Adı veya Email</label>
-                        <input type="text" class="form-control" id="username" name="username placeholder="Örn: ibrahimv" required>
+                        <label for="username"  class="form-label fw-semibold">Kullanıcı Adı veya Email</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Örn: ibrahimv" required>
                     </div>
 
             
                     <div class="mb-3">
                         <div class="d-flex justify-content-between">
-                            <label for="password" class="form-label fw-semibold">Şifre</label>
+                            <label for="password" name="password" class="form-label fw-semibold">Şifre</label>
                             <a href="#" class="text-decoration-none small text-success">Şifremi Unuttum</a>
                         </div>
                         <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required>
                     </div>
-
-                    <!-- Beni Hatırla -->
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="remember">
                         <label class="form-check-label" for="remember">Beni Hatırla</label>
