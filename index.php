@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["user_id"])) {
+    header("Location: login.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -8,29 +16,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bgcolor ">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">İbrahim Valiyev</a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
-                        <li class="nav-item"><a class="nav-link" href="takimimiz.html">Takımımız</a></li>
-                        <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-                        <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-                        <li class="nav-item"><a class="nav-link btn btn-outline-light ms-lg-2" href="login.html">Giriş Yap</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+      <?php include "navbar.php"; ?>
     <main>
     <section id="hakkimda" class="container mt-4">
         <div class="row align-items-center">
@@ -47,7 +33,7 @@
                         Boş zamanlarımda futbol oynamayı və sevdiyim komandaların oyunlarını izləməyi çox severim. 
                         Ayrıca sinema dünyasıyla ilgilenmek ve YouTube için içerikler üretmek en büyük hobilerim arasında.
                     </p>
-                    <a href="cv.html" class="btn btn-outline-secondary">Özgeçmişimi İncele</a>
+                    <a href="cv.php" class="btn btn-outline-secondary">Özgeçmişimi İncele</a>
                 </article>
             </div>
            

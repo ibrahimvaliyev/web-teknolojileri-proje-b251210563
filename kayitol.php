@@ -9,29 +9,7 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bgcolor ">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">İbrahim Valiyev</a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
-                        <li class="nav-item"><a class="nav-link" href="takimimiz.html">Takımımız</a></li>
-                        <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-                        <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-                        <li class="nav-item"><a class="nav-link btn btn-outline-light ms-lg-2" href="login.html">Giriş Yap</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php include "navbar.php"; ?>
     <div class="container d-flex justify-content-center align-items-center vh-100 py-5">
         <div class="card shadow-lg border-0 register-card p-4">
             <div class="card-body">
@@ -43,12 +21,12 @@
                 <form action="register.php" method="POST">
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <label for="reg-name" class="form-label fw-semibold">Adınız</label>
-                            <input type="text"  class="form-control" id="reg-name" placeholder="İbrahim" required>
+                            <label for="reg-name"  class="form-label fw-semibold">Adınız</label>
+                            <input type="text" name="reg-name" class="form-control" id="reg-name" placeholder="İbrahim" required>
                         </div>
                         <div class="col-md-6 mt-3 mt-md-0">
                             <label for="reg-surname" class="form-label fw-semibold">Soyadınız</label>
-                            <input type="text" class="form-control" id="reg-surname" placeholder="Valiyev" required>
+                            <input type="text" name="reg-surname" class="form-control" id="reg-surname" placeholder="Valiyev" required>
                         </div>
                     </div>
 
@@ -64,16 +42,16 @@
                         <input type="email" name="reg-email" class="form-control" id="reg-email" placeholder="ornek@mail.com" required>
                     </div>
 
-                    <!-- Şifre -->
+                
                     <div class="mb-3">
-                        <label for="reg-password" class="form-label fw-semibold">Şifre</label>
+                        <label for="reg-password" name="reg-password" class="form-label fw-semibold">Şifre</label>
                         <input type="password" name="reg-password" class="form-control" id="reg-password" placeholder="••••••••" required>
                     </div>
 
-                    <!-- Şifre Tekrar -->
+            
                     <div class="mb-4">
-                        <label for="reg-password-confirm" class="form-label fw-semibold">Şifre Tekrar</label>
-                        <input type="password" name="reg-password" class="form-control" id="reg-password-confirm" placeholder="••••••••" required>
+                        <label for="reg-password-confirm"   class="form-label fw-semibold">Şifre Tekrar</label>
+                        <input type="password" name="reg-password-confirm" class="form-control" id="reg-password-confirm" placeholder="••••••••" required>
                     </div>
 
                     <div class="mb-4 form-check">

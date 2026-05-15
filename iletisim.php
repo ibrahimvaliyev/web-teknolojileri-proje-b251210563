@@ -9,29 +9,7 @@
     </head>
 
     <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bgcolor ">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">İbrahim Valiyev</a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
-                        <li class="nav-item"><a class="nav-link" href="takimimiz.html">Takımımız</a></li>
-                        <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-                        <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-                        <li class="nav-item"><a class="nav-link btn btn-outline-light ms-lg-2" href="login.html">Giriş Yap</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+        <?php include "navbar.php"; ?>
     <main class="py-5 bg-light min-vh-100">
         <div class="container">
             
@@ -54,7 +32,7 @@
                         <div class="card-footer bg-transparent border-success mb-5">
                             <h3 class="text-center mb-3 bn-tkb-ed">Beni Takip Edin</h3> 
                             <a href="https://github.com/ibrahimvaliyev" target="_blank" button type="button" class="btn btn-outline-secondary" >Github</a>
-                            <a href="" button type="button" class="btn btn-outline-secondary">Instagram</a>
+                            <a href="https://www.instagram.com/ibravlyv/" target="_blank" button type="button" class="btn btn-outline-secondary">Instagram</a>
                         </div>
                     </div>
                         
@@ -63,31 +41,31 @@
                         <div class="card-body">
                             <h3 class="fw-bold mb-4">Mesaj Gönderin</h3>
                             
-                            <form action="gonder.php" method="POST">
+                            <form action="mesajlar.php" method="post">
                                 <div class="row mb-3">
                                     <div class="col-md-6 mb-3 ">
                                         <label for="name" class="fw-bold">Adınız</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Örn. İbrahim" required>
+                                        <input type="text" name="ad" class="form-control" id="name" placeholder="Örn. İbrahim" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="surname" class="fw-bold">Soyadınız</label>
-                                        <input type="text" class="form-control" id="surname" placeholder="Örn. Valiyev" required>
+                                        <input type="text" name="soyad" class="form-control" id="surname" placeholder="Örn. Valiyev" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="email" class="fw-semibold">E-posta Adresiniz</label>
-                                    <input type="email" class="form-control" id="email" placeholder="ornek@mail.com" required>
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="ornek@mail.com" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="subject" class="fw-semibold">Konu</label>
-                                    <input type="text" class="form-control" id="konu" placeholder="Mesajınızın konusu" required>
+                                    <input type="text" name="konu" class="form-control" id="konu" placeholder="Mesajınızın konusu" required>
                                 </div>
 
                                 <div class="mb-4">
                                     <label for="message" class="fw-semibold">Mesajınız</label>
-                                    <textarea class="form-control" id="message" placeholder="Fikirlerinizi buraya yazın..." required></textarea>
+                                    <textarea class="form-control" name="mesaj" id="message" placeholder="Fikirlerinizi buraya yazın..." required></textarea>
                                 </div>
 
                                 <div class="d-grid">

@@ -9,29 +9,7 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bgcolor ">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">İbrahim Valiyev</a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
-                        <li class="nav-item"><a class="nav-link" href="takimimiz.html">Takımımız</a></li>
-                        <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-                        <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-                        <li class="nav-item"><a class="nav-link btn btn-outline-light ms-lg-2" href="login.html">Giriş Yap</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php include "navbar.php"; ?>
 
     <main>
         <section class="py-5 text-center text-white shadow-lg" 
@@ -47,7 +25,7 @@
             </div>
         </div>
          </section>
-    <div class="row mb-4">
+    <div id="kesfet" class="row mb-4">
         <div class="col-12 text-center">
             <hr class="w-25 mx-auto">
             <h1 class="display-5">İbrahim Valiyev</h1>
